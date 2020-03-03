@@ -1,0 +1,14 @@
+.ijwb
+.DS_Store
+.idea/
+.ipynb_checkpoints
+.vscode/
+/.project/
+__pycache__
+
+node_modules
+*.iml
+
+*.log
+*.dec
+

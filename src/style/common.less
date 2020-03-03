@@ -1,0 +1,140 @@
+@import "./variables.less";
+
+body, 
+html {
+    background-color: rgb(255, 255, 255);
+    font-family: Roboto,Helvetica,Arial,sans-serif;
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    font-size: 14px;
+    height: 100%;
+    display: block;
+    overflow: hidden;
+}
+
+#root {
+    height: 100%;
+    display: flex;
+    overflow: hidden;
+}
+
+.app-container {
+    height: 100%;
+    flex: 1 1 auto;
+    overflow: hidden;
+}
+
+.content {
+    position: relative;
+    width: 100%;
+    height: calc(100% - 32px);
+    display: flex;
+    box-sizing: border-box;
+    border-top: #dadce0 1px solid;
+}
+
+
+
+.button {
+    background-color: transparent;
+    border: 1px solid #dadce0;
+    border-radius: 4px;
+    box-sizing: border-box;
+    height: 32px;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: .25px;
+    opacity: 1;
+    color: #3c4043;
+    padding: 0 12px;
+    line-height: 20px;
+    outline: none;
+
+    &_with-margin-right {
+        margin-right: 12px;
+    }
+
+    &:hover {
+        background-color: #f1f3f4;
+    }
+
+    &:active {
+        background-color: #eaeef0;
+    }
+}
+
+.pseudo-button {
+    color: #5f6368;
+    display: flex;
+    cursor: pointer;
+    border-radius: 50%;
+    text-align: center;
+    background-color: #fff;
+    width: 32px;
+    height: 32px;
+
+    &:hover {
+        background-color: rgba(32,33,36,0.03);
+    }
+
+    &:active {
+        background-color: rgba(32,33,36,0.09);
+    }
+
+    &:first-child {
+        margin-right: 8px;
+    }
+
+    &__inner {
+        position: relative;
+        top: 50%;
+        left: 50%;
+        margin-top: -12px;
+        margin-left: -12px;
+    }
+}
+
+.button-groupe {
+
+    .button {
+        margin-left: -1px;
+        border-radius: 0;
+
+        &:first-child {
+            border-radius: 4px 0 0 4px;
+        }
+
+        &:last-child {
+            border-radius: 0 4px 4px 0;
+        }
+
+        &.selected {
+            background-color: rgba(32,33,36,0.09);
+        }
+    }
+}
+
+.title {
+    color: #3c4043;
+    font-size: 22px;
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: 33px;
+    white-space: nowrap;
+    margin-left: 16px;
+}
+
+.app-title {
+    color: #5f6368;
+    font-size: 22px;
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: 33px;
+    white-space: nowrap;
+    margin-left: 2px;
+}

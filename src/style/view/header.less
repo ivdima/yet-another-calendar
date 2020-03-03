@@ -1,0 +1,27 @@
+@import "../variables.less";
+
+.header {
+    position: relative;
+
+    &__content {
+        padding: 8px;
+        position: relative;
+        box-sizing: border-box;
+        width: 100%;
+        display: flex;
+    }
+
+    &__block {
+        height: 32px;
+        display: flex;
+
+        &-first {
+            width: 238px;
+            padding-right: 18px;
+        }
+
+        &-main {
+            flex-grow: 1;
+        }
+    }
+}

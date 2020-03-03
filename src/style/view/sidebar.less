@@ -1,0 +1,23 @@
+@import "../variables.less";
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    flex: 0 0 auto;
+    overflow: hidden;
+    transition: width 0.6s ease;
+
+    &__content {
+        position: relative;
+        padding: 16px;
+    }
+
+    &_visibility-true {
+        width: 256px;
+    }
+
+    &_visibility-false {
+        width: 0;
+    }
+}
